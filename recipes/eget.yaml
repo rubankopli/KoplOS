@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=
+
+# TODO: Make sure we run this only after the 'files' module has copied over the eget toml?
+#       Or otherwise make sure we use the one from 'system/...'?
+# TODO: Run eget on all 'install-packages' in the array, using the provided config file
+
+type: eget
+source: local
+config-location: "/etc/eget/eget.toml"
+install-packages:
+    - "imsnif/bandwhich"
+    - "twpayne/chezmoi"
+    - "rs/curlie"
+    - "bootandy/dust"
+    - "eza-community/eza"
+    - "pemistahl/grex"
+    - "casey/just"
+    - "sharkdp/pastel"
+    - "pkgxdev/pkgx"
+    - "chmln/sd"
+    - "sharkdp/vivid"
+    - "VSCodium/vscodium"
+    - "zellij-org/zellij"

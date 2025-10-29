@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+
+---
+
+# image will be published to ghcr.io/<user>/<name>
+name: koplos
+# description will be included in the image's metadata
+description: Bazzite-based image incorporating a modernized set of linux core utils featuring the fish shell
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/bazzite
+image-version: stable
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - from-file: files.yaml
+  - from-file: eget.yaml
+  - from-file: rpm-ostree.yaml
+  - from-file: flatpaks.yaml
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully

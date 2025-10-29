@@ -1,3 +1,7 @@
+# Cosign Files
 cosign.key
 cosign.private
 /Containerfile
+
+# Editor Files
+.vscode

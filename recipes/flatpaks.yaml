@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/modules/default-flatpaks-latest.json
+
+type: default-flatpaks
+configurations:
+  - scope: system
+    install:
+      - org.mozilla.firefox

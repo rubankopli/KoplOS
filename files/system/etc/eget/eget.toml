@@ -1,0 +1,50 @@
+# Configurations for eget (github release grabber tool)
+
+[global]
+    system = "linux/x64"
+    target = "/usr/local/bin/"
+    upgrade_only = true
+
+# Per-Package configurations
+
+["imsnif/bandwhich"]
+    asset_filters = ["gnu"]
+
+["twpayne/chezmoi"]
+    asset_filters = [".rpm", "x86_64"]
+    target = "./chezmoi.rpm"
+
+["rs/curlie"]
+    asset_filters = [".rpm"]
+    target = "./curlie.rpm"
+
+["bootandy/dust"]
+    asset_filters = [".tar.gz", "gnu"]
+
+["eza-community/eza"]
+    asset_filters = [".tar.gz", "gnu"]
+
+["pemistahl/grex"]
+    asset_filters = []
+
+["casey/just"]
+    asset_filters = []
+
+["sharkdp/pastel"]
+    asset_filters = ["gnu"]
+
+["pkgxdev/pkgx"]
+    asset_filters = ["tar.xz", "^asc"]
+
+["chmln/sd"]
+    asset_filters = ["gnu"]
+
+["sharkdp/vivid"]
+    asset_filters = ["gnu"]
+
+["VSCodium/vscodium"]
+    asset_filters = [".rpm", "x86_64", "^sha1"]
+    target = "./vscodium.rpm"
+
+["zellij-org/zellij"]
+    asset_filters = []
