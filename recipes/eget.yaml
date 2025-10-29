@@ -6,6 +6,7 @@
 
 type: eget
 source: local
+install-script-checksum: "0e64b8a3c13f531da005096cc364ac77835bda54276fedef6c62f3dbdc1ee919"
 config-location: "/etc/eget/eget.toml"
 install-packages:
     - "imsnif/bandwhich"

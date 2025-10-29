@@ -47,4 +47,4 @@
     target = "./vscodium.rpm"
 
 ["zellij-org/zellij"]
-    asset_filters = []
+    asset_filters = ["^no-web"]
