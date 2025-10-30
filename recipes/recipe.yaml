@@ -19,4 +19,5 @@ modules:
   # - from-file: rpm-ostree.yaml
   - from-file: eget.yaml
   - from-file: flatpaks.yaml
+  - from-file: os-release.yaml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -1,25 +1,33 @@
 # TODO
-1. Make eget custom module
-2. Figure out how to build locally
-3. Port over packages
+1. Figure out setting fish as default shell?
+2. Figure out fish plugins?
+    - Maybe make a custom fish module?
 
 
 ## Major
-- Update recipe.yml basics
+-
 
 ## Modules
 - Included
-    - Do it
+    - `chezmoi`
+    - `default-flatpaks`
+    - `fonts`
+    - `os-release`
+        - Need to update some of the fields set by Bazzite, create a logo, etc.
+    - `soar`
+    - `systemd`
+    - `yafti`
 - Custom
-    - Make [custom module](https://blue-build.org/how-to/making-modules/) for eget
-    - (Later) Set up [custom module repository](https://blue-build.org/how-to/module-repository/)
+    - Set up [custom module repository](https://blue-build.org/how-to/module-repository/) for eget
+    - `fish` custom module & custom module repository?
 
 ## Packages
-- Port over from KoplOS-uBlue
-- Add `micro`
-- Add `ouch`
-- Add `lazygit`
 - Add `fnm` (fast node manager)
+- `snapclient` (requires build from source OR brew)
+
+## Scripts/etc
+- `cope` perl script CLI colorizer?
+- `ANSI` package through `BPM`
 
 ## Configs
 - Add some default configs to /etc/ maybe?

@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/modules/os-release-latest.json
+
+type: os-release
+properties:
+  NAME: KoplOS
+  ID: koplos
+  ID_LIKE: fedora
+  PRETTY_NAME: KoplOS

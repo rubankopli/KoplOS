@@ -23,6 +23,7 @@ install:
     - hyperfine
     - jq
     - just
+    - micro
     - mmv
     - mtr
     - neovim

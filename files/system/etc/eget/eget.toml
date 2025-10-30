@@ -10,6 +10,9 @@
 ["imsnif/bandwhich"]
     asset_filters = ["gnu"]
 
+["https://git.io/bpm"]
+    asset_filters = []
+
 ["twpayne/chezmoi"]
     asset_filters = [".rpm", "x86_64"]
     target = "./chezmoi.rpm"
@@ -32,6 +35,9 @@
 
 ["jesseduffield/lazygit"]
     asset_filters = []
+
+["ouch-org/ouch"]
+    asset_filters = ["gnu"]
 
 ["sharkdp/pastel"]
     asset_filters = ["gnu"]
