@@ -15,7 +15,8 @@ image-version: stable
 # you can include multiple instances of the same module
 modules:
   - from-file: files.yaml
-  - from-file: rpm-ostree.yaml
+  - from-file: dnf.yaml
+  # - from-file: rpm-ostree.yaml
   - from-file: eget.yaml
   - from-file: flatpaks.yaml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/modules/dnf-latest.json
+
+type: dnf
+repos:
+  copr:
+    - wezfurlong/wezterm-nightly
+  # TODO: Should we leave the other non-free one enabled instead?
+  nonfree: rpmfusion
+install:
+  packages:
+    - atool
+    - bat
+    - btop
+    - git-delta
+    - du-dust
+    - entr
+    - fd-find
+    - fish
+    - fzf
+    - git
+    - glances
+    - helix
+    - hyperfine
+    - jq
+    - just
+    - mmv
+    - mtr
+    - neovim
+    - ncdu
+    - nvtop
+    - ov
+    - poppler
+    - procs
+    - ripgrep
+    - shellcheck
+    - syncthing
+    - tealdeer
+    - thefuck
+    - tokei
+    - trash-cli
+    - wezterm # Relies on COPR above
+    - wget2
+    - zoxide

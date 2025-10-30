@@ -30,11 +30,17 @@
 ["casey/just"]
     asset_filters = []
 
+["jesseduffield/lazygit"]
+    asset_filters = []
+
 ["sharkdp/pastel"]
     asset_filters = ["gnu"]
 
 ["pkgxdev/pkgx"]
     asset_filters = ["tar.xz", "^asc"]
+
+["linebender/resvg"]
+    asset_filters = ["resvg"]
 
 ["chmln/sd"]
     asset_filters = ["gnu"]
@@ -45,6 +51,9 @@
 ["VSCodium/vscodium"]
     asset_filters = [".rpm", "x86_64", "^sha1"]
     target = "./vscodium.rpm"
+
+["sxyazi/yazi"]
+    asset_filters = ["gnu"]
 
 ["zellij-org/zellij"]
     asset_filters = ["^no-web"]
