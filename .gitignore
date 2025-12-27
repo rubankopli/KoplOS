@@ -3,5 +3,9 @@ cosign.key
 cosign.private
 /Containerfile
 
+# Generated Files
+KoplOS.iso
+KoplOS-CHECKSUM
+
 # Editor Files
 .vscode

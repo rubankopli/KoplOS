@@ -22,6 +22,7 @@
     - `fish` custom module & custom module repository?
 
 ## Packages
+- Add 'espanso' (keyboard expansion)
 - Add `fnm` (fast node manager)
 - `snapclient` (requires build from source OR brew)
 
