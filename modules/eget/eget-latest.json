@@ -1,0 +1,44 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/modules/eget-latest.json",
+    "type": "object",
+    "properties": {
+        "type": {
+            "anyOf": [
+                {
+                    "type": "string",
+                    "const": "eget"
+                },
+                {
+                    "type": "string",
+                    "const": "eget@v1"
+                },
+                {
+                    "type": "string",
+                    "const": "eget@latest"
+                }
+            ],
+            "description": "The eget module downloads and installs eget (https://github.com/zyedidia/eget) and uses it to install a user-provided list of packages from github repositories or other URLs. Note that this is inherently *INSECURE*!"
+        },
+        "install-script-checksum": {
+            "type": "string",
+            "default": "0e64b8a3c13f531da005096cc364ac77835bda54276fedef6c62f3dbdc1ee919",
+            "description": "Checksum for the install script to verify authenticity. Acquired from https://github.com/zyedidia/eget?tab=readme-ov-file#quick-install-script"
+        },
+        "config-location": {
+            "type": "string",
+            "default": "",
+            "description": "Full path to the eget.toml configuration file on the system for eget to use. Must be copied into place with the 'files' module prior to running this module."
+        },
+        "install-packages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "List of github repositories (format: `org/repo` or `user/repo`) or URLs to install packages from. Github repos must have releases to use. If eget is unable to determine the correct package non-interactively, the module will fail. Use an `eget.toml` file (copied to `config-location` (by default `/etc/eget/eget.toml`) to configure eget to provide filters to aid eget in grabbing the right packages."
+        }
+    },
+    "required": [
+        "type"
+    ]
+}

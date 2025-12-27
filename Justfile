@@ -28,3 +28,9 @@ generate-iso ISOName='KoplOS' RecipeFile='recipes/recipe.yaml':
 validate RecipeFile='recipes/recipe.yaml':
     #!/usr/bin/env bash
     bluebuild validate --all-errors {{RecipeFile}}
+
+# Command: run-docker
+# Description: Uses a (previously built) koplos docker image to spin up a container and attaches to it
+run-docker Tag='latest':
+    #!/usr/bin/env bash
+    docker run --rm -it localhost/koplos:{{Tag}} /bin/bash

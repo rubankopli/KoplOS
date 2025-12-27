@@ -13,10 +13,6 @@
 ["https://git.io/bpm"]
     asset_filters = []
 
-["twpayne/chezmoi"]
-    asset_filters = [".rpm", "x86_64"]
-    target = "./chezmoi.rpm"
-
 ["rs/curlie"]
     asset_filters = [".rpm"]
     target = "./curlie.rpm"

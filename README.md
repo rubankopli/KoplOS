@@ -12,6 +12,8 @@ just generate-iso
 ```
 This will build an ISO image "KoplOS.iso" and place it right in the repo folder.
 
+After installing and booting for the first time, you may be prompted to register a "MOK Key". When registering the key, you will be asked for the MOK Key password. The password for the MOK key is `universalblue`.
+
 For further details/instructions, see [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
 
 ## Rebasing An Existing Atomic Fedora Distro

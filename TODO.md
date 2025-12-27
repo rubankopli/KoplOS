@@ -4,6 +4,8 @@
     - Maybe make a custom 'fish' module?
     - Could just use a script directly for now
 3. rclone setup
+4. Add versioning info for releases
+    - Append version to generated .iso image
 
 
 ## Major

@@ -1,5 +1,7 @@
 # yaml-language-server: $schema=
 
+# TODO: yaml-language-server schema from URL
+
 # TODO: Make sure we run this only after the 'files' module has copied over the eget toml?
 #       Or otherwise make sure we use the one from 'system/...'?
 # TODO: Run eget on all 'install-packages' in the array, using the provided config file
@@ -11,7 +13,6 @@ config-location: "/etc/eget/eget.toml"
 install-packages:
     - "imsnif/bandwhich"
     - "https://git.io/bpm"
-    - "twpayne/chezmoi" # TODO: Use the 'chezmoi' module instead
     - "rs/curlie"
     - "eza-community/eza"
     - "pemistahl/grex"
