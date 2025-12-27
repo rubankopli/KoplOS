@@ -2,6 +2,8 @@
 
 type: dnf
 repos:
+  files:
+    - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
   copr:
     - wezfurlong/wezterm-nightly
   # TODO: Should we leave the other non-free one enabled instead?
@@ -14,6 +16,7 @@ install:
     - git-delta
     - du-dust
     - entr
+    - espanso-wayland
     - fd-find
     - fish
     - fzf
@@ -32,6 +35,7 @@ install:
     - ov
     - poppler
     - procs
+    - rclone
     - ripgrep
     - shellcheck
     - syncthing

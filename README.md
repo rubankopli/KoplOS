@@ -2,9 +2,19 @@
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-After setup, it is recommended you update this README to describe your custom image.
+# Installation
 
-## Installation
+## ISO/Fresh Install
+
+To generate an ISO image to use as installation media, clone the repository locally, navigate to it from within a terminal, and run:
+```bash
+just generate-iso
+```
+This will build an ISO image "KoplOS.iso" and place it right in the repo folder.
+
+For further details/instructions, see [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+
+## Rebasing An Existing Atomic Fedora Distro
 
 > [!WARNING]
 > [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
@@ -30,9 +40,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yaml`, so you won't get accidentally updated to the next major version.
 
-## ISO
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
 
 ## Verification
 

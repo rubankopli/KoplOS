@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/modules/fonts-latest.json
+
+type: fonts
+fonts:
+  nerd-fonts:
+    - AnonymousPro
+    - Hack
+    - IntelOneMono
+    - JetBrainsMono
+    - Lilex
+    - Meslo
+    - Monaspace
+    - RobotoMono
+    - SourceCodePro
+    - SpaceMono
+    - Ubuntu
+    - UbuntuMono

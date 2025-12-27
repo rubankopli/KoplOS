@@ -14,10 +14,20 @@ image-version: stable
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  # Copy any files into the appropriate system directories first
   - from-file: files.yaml
+  # Install System Packages
   - from-file: dnf.yaml
-  # - from-file: rpm-ostree.yaml
   - from-file: eget.yaml
   - from-file: flatpaks.yaml
+
+  # Install Configuration Management, Fonts, Services, etc.
+  - from-file: chezmoi.yaml
+  - from-file: fonts.yaml
+  - from-file: systemd.yaml
+  # Run any scripts/commands needed to finish up installation steps
+  - from-file: espanso.yaml
+  # Finishing Details
   - from-file: os-release.yaml
+  # Image Signing
   - type: signing # this sets up the proper policy & signing files for signed images to work fully

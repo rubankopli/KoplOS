@@ -1,0 +1,4 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/modules/chezmoi-latest.json
+
+type: chezmoi
+repository: "git@github.com:rubankopli/dotfiles.git"

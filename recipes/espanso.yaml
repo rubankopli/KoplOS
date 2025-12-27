@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/modules/script-latest.json
+
+type: script
+snippets:
+  - setcap "cap_dac_override+p" $(which espanso)
+  - espanso service register
