@@ -23,6 +23,5 @@ install-packages:
     - "linebender/resvg"
     - "chmln/sd"
     - "sharkdp/vivid"
-    - "VSCodium/vscodium"
     - "sxyazi/yazi"
     - "zellij-org/zellij"

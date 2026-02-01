@@ -50,12 +50,8 @@
 ["sharkdp/vivid"]
     asset_filters = ["gnu"]
 
-["VSCodium/vscodium"]
-    asset_filters = [".rpm", "x86_64", "^sha1"]
-    target = "./vscodium.rpm"
-
 ["sxyazi/yazi"]
-    asset_filters = ["gnu"]
+    asset_filters = ["gnu", "zip"]
 
 ["zellij-org/zellij"]
     asset_filters = ["^no-web"]

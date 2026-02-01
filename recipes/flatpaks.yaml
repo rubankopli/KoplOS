@@ -4,4 +4,10 @@ type: default-flatpaks
 configurations:
   - scope: system
     install:
+      # TODO: Maybe install this flatpak through a /etc/shadow-maint script to set bitwarden as the ssh key manager?
+      - com.bitwarden.desktop
+      - com.spotify.Client
+      - dev.goats.xivlauncher
+      - dev.vencord.Vesktop
+      - md.obsidian.Obsidian
       - one.ablaze.floorp

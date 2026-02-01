@@ -12,6 +12,7 @@
 - Figure out config strategy?
     > Make/use "KoplOS-Configs" repo for default chezmoi config? Users can change it later?
         >> Or perhaps have this selected at install time somehow?
+- Set up `eget` service to do updates every boot?
 
 ## Modules
 - Included
@@ -29,6 +30,8 @@
     - 'espanso' module/module repository?
 
 ## Packages
+- `floorp` system package
+- `bitwarden` rpm (use eget for system integration)
 - Add `fnm` (fast node manager)
 - `snapclient` (requires build from source OR brew)
     > Probably want to set the config in /etc/default/snapclient as well?

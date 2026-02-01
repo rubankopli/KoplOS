@@ -20,11 +20,10 @@ modules:
   - from-file: dnf.yaml
   - from-file: eget.yaml
   - from-file: flatpaks.yaml
-
+  # - from-file: soar.yaml # TODO: Convert `eget` to use this?
   # Install Configuration Management, Fonts, Services, etc.
   - from-file: chezmoi.yaml
   - from-file: fonts.yaml
-  - from-file: systemd.yaml
   # Run any scripts/commands needed to finish up installation steps
   - from-file: espanso.yaml
   # Finishing Details

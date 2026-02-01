@@ -6,14 +6,16 @@ repos:
     - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
   copr:
     - wezfurlong/wezterm-nightly
-  # TODO: Should we leave the other non-free one enabled instead?
   nonfree: rpmfusion
 install:
+  skip-unavailable: true
+  skip-broken: true
   packages:
     - atool
     - bat
     - btop
-    - git-delta
+    - git-delta # delta
+    - docker-cli
     - du-dust
     - entr
     - espanso-wayland
