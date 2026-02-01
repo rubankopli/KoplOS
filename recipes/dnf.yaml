@@ -8,8 +8,8 @@ repos:
     - wezfurlong/wezterm-nightly
   nonfree: rpmfusion
 install:
-  skip-unavailable: true
-  skip-broken: true
+  # skip-unavailable: true
+  # skip-broken: true
   packages:
     - atool
     - bat
