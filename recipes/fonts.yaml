@@ -4,26 +4,30 @@ type: fonts
 fonts:
   nerd-fonts:
     - AnonymousPro
+    - BigBlueTerminal
     - Hack
     - IntelOneMono
     - JetBrainsMono
     - Lilex
     - Meslo
     - Monaspace
+    - ProggyClean
     - RobotoMono
     - SourceCodePro
     - SpaceMono
+    - Terminus
     - Ubuntu
     - UbuntuMono
-
-# To add:
-# - BigBlueTerm (nerd font)
-# - #ProggyClean (nerd font)
-# - Terminess (nerd font)
-# - Victor Mono (nerd font)
-
-# - Fragment [https://www.programmingfonts.org/#fragment-mono]
-# - Latin Modern Mono [https://www.programmingfonts.org/#latin-modern]
-# - Maple [https://www.programmingfonts.org/#maple]
-# - NotCourierSans [https://www.programmingfonts.org/#notcouriersans]
-# - Recursive [https://www.programmingfonts.org/#recursive-mono-linear]
+    - VictorMono
+  google-fonts:
+    - Recursive
+  url-fonts:
+    - name: FragmentMono
+      url: https://github.com/weiweihuanghuang/fragment-mono/releases/download/1.21/fragment-mono-1.21.zip
+    - name: LatinModernMono
+      url: https://www.gust.org.pl/projects/e-foundry/latin-modern/download/lm2.006otf.zip
+    - name: Maple
+      url: https://github.com/subframe7536/maple-font/releases/download/v7.9/MapleMono-NF-CN-unhinted.zip
+    - name: NotCourierSans
+      url: https://www.fontsquirrel.com/fonts/download/NotCourierSans
+ 
